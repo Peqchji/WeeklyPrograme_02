@@ -7,12 +7,8 @@ int main(){
         check = 1;
         scanf("%d", &num);
         if (num == -99) { break; }
-        if(num<1){
-            printf("Input must be more than 1\n");
-            continue;
-        }
         SQRT_num = floor(sqrt(num));
-        if (num == 1){
+        if (num <= 1){
             printf("| %d | is not Prime number\n", num);
             continue;
         }
